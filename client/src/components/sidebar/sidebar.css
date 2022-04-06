@@ -1,0 +1,28 @@
+
+
+
+
+.MainSideBarDiv {
+    background-color: #182229;
+    width: 400px;
+    height: 90vh;
+    border-radius: 10px 0px 0px 10px;
+
+    /* hiding scroolbar  */
+    
+}
+
+.ContactScrooler {
+    height: 76vh;
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    border-radius: 0px 0px 0px 10px;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .ContactScrooler::-webkit-scrollbar {
+    display: none;
+  }
+
+

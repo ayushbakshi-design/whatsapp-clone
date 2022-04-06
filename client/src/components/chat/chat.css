@@ -1,0 +1,251 @@
+/* Google fonts */
+/* Dm Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+/* Default page css */
+
+.DefaultChat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #222E35;
+    width: 980px;
+    height: 90vh;
+    max-width: 980px;
+    max-height: 90vh;
+    font-family: 'Dm sans';
+    border-bottom: 4px solid #008069;
+    border-left : 1px solid rgb(66, 66, 66);
+}
+
+.mainImageSvg {
+    position: relative;
+    left: 300px;
+    top: 80px;
+}
+
+.DefaultPageText {
+    position: relative;
+    text-align: center;
+}
+     
+.DefaultTitle {
+    color: #D1D5D8;
+    font-size: 1.4rem;
+}
+
+.Beta {
+    background-color: #364147;
+    color: #8696A0;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.DefaultDescription {
+    color: #73838C;
+    font-size: 0.8rem;
+}
+
+.copyrightDiv {
+    color: #73838C;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    font-size: 0.8rem;
+}
+
+
+/* Chat interface  Css*/
+
+.mainChatInterface{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 980px;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar */
+.ChatNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 980px;
+    font-family: 'Dm sans';
+    background-color: #202C33;
+    border-left: 1px solid rgb(77, 77, 77);
+}
+
+.leftNavChat {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.OnlineName {
+    padding-left: 10px;
+    font-family: 'Dm sans';
+}
+
+.Name {
+    color: White;
+    font-size: 1.1rem;
+}
+
+.onlineStatus {
+    font-size: 0.8rem;
+    color: #7F8F98;
+}
+
+.ContactProfile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+
+.rightNavChat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+    position: relative;
+    right: 30px;
+    top: 15px;
+}
+
+
+/* cHAT bOTTOM INPUT INTERFACE */
+
+.chatBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+    max-width: 980px;
+    height: 60px;
+    max-height: 60px;
+    background-color: #202C33;
+}
+
+.leftemoji {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 30px;
+
+}
+
+.mainInput {
+    font-size: 0.9rem;
+    font-family: "Dm sans";
+    height: 40px;
+    width: 740px;
+    color: white;
+    background-color: #2A3942;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+
+.mainInput:active {
+    border: 0px;
+}
+
+.BottomChatIcon {
+    color: #6D7C84;
+}
+
+.recordDiv {
+    position: relative;
+    right: 30px;
+}
+
+
+/* Chatting Interface  */
+
+
+.msgInterface {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 980px;
+    background-image: url("https://wallpaperaccess.com/full/1288171.jpg");
+    align-items: center;
+    padding-top: 20px;
+    overflow: scroll;    
+}
+
+
+.Alert {
+    background-color: #182229;
+    padding: 5px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.encryptedChatAlert {
+    font-size: 0.8rem;
+    color: #C9A866;
+    font-family: "Dm sans";
+
+}
+
+
+/* Messages  */
+
+.MsgContainer{
+    display: flex;
+    flex-direction: column;
+    width: 970px;
+}
+
+.msg{
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Dm sans';
+    max-width: 400px;
+    background-color: #202C33;
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 8px;
+    border-radius: 10px;
+    margin-top: 10px;  
+    max-width: 400px;  
+}
+
+.recivedMsg {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.sentMsg {
+    background-color: #005C4B;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.tickMark {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.msgTime {
+    color: #81AEA6;
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-right: 2px;
+    text-align: right;
+}
