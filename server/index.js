@@ -5,6 +5,10 @@ import cors from 'cors'
 // Route imports
 import createUser from './routes/register.js'
 import findUser from "./routes/login.js"
+
+import addConversation from "./routes/addConversation.js"
+import findConversation from './routes/findConversaton.js'
+
 // Model imports
 
 
@@ -38,9 +42,15 @@ mongoose
     res.send("express initiated");
   })
 
+
+// Login & Register Routes 
 app.use("/register", createUser)
 app.use("/login", findUser)
-  
+
+// Routes for creating and fetching conversations for each users
+
+app.use("/createConversation", addConversation)
+app.use("/findConversations", findConversation)
 
 
 // Simple App listener

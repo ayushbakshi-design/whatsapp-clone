@@ -67,7 +67,11 @@
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
 }
+
+
 
 /* Navbar */
 .ChatNavBar {
@@ -184,9 +188,18 @@
     background-image: url("https://wallpaperaccess.com/full/1288171.jpg");
     align-items: center;
     padding-top: 20px;
-    overflow: scroll;    
+    overflow: scroll;   
+
+    
+    /* For firefox and edge */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .msgInterface::-webkit-scrollbar {
+    display: none;
+  }
 
 .Alert {
     background-color: #182229;

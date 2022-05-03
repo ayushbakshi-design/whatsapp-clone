@@ -26,13 +26,14 @@ function RegisterPage() {
 
   const handleRegistration = (e) => {
     e.preventDefault();
-    axios.post("/register", JSON.stringify( {
-      "username": RegUserName,
-      "phone": RegPhone,
-      "password": RegPassword
-    })).then(response => console.log(response)).catch((err) => console.log(err))
+    axios.post("/register", {
+      "UserName": RegUserName,
+      "PhoneNumber": RegPhone,
+      "Password": RegPassword
+    }).then(response => console.log(response)).catch((err) => {console.log(err)
+    console.log("from login form")});
 
-
+    confirm("Are you Sure credentials are correct ? ")
   }
 
   return (
@@ -44,8 +45,8 @@ function RegisterPage() {
 
         <form className="RegForm" onSubmit={handleRegistration} >
           <input onChange={handleRegUserName} type="text" className='registerInput' placeholder='Username' value={RegUserName} />
-          <input onChange={handleRegPhone} type="text" className='registerInput' placeholder='Phone Number' value={RegPhone} />
-          <input onChange={handleRegPassword} type="text" className='registerInput' placeholder='Password' value={RegPassword} />
+          <input onChange={handleRegPhone} type="tel" className='registerInput' placeholder='Phone Number' value={RegPhone} />
+          <input onChange={handleRegPassword} type="password" className='registerInput' placeholder='Password' value={RegPassword} />
 
 
           <button type='submit' className='registerBtn'>Register Now</button>

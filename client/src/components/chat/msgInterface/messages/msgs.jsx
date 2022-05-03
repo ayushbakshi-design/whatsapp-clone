@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react'
 
 
@@ -42,7 +43,7 @@ function Msgs() {
       {MsgList.map((item,index) => {
         return (
             <div className="MsgContainer" key={index}>
-              <div className={item.status=="sent"? "sentMsg msg":"recivedMsg msg"}>
+              <div className={item.status==="sent"? "sentMsg msg":"recivedMsg msg"}>
                 <p>{item.message}</p>
                 <p className='msgTime'>{item.time}</p>
               </div>

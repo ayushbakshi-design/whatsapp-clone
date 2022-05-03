@@ -6,11 +6,10 @@ const router = express.Router();
 
 
 // Endpoints
-router.get('/', (req,res)=>{
+router.post('/', (req,res)=>{
     Users.find({
-        UserName : "demo",
-        PhoneNumber : "82565",
-        Password : "hello"
+        UserName : req.body.UserName,
+        Password : req.body.Password
     }).then((data)=>{
         res.status(200).send(data)
     }).catch((err)=>{

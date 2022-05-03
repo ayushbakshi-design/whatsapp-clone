@@ -8,18 +8,16 @@ const router = express.Router();
 
 // Endpoints
 router.post('/', (req,res)=>{
-    
-    console.log(req.data)
-    res.send(req.data)
-//     Users.create({
-//         UserName : req.data.username,
-//         PhoneNumber : req.data.phone,
-//         Password : req.data.password
-//     }).then((data)=>{
-//         res.status(201).send(data)
-//     }).catch((err)=>{
-//         res.status(500).send(err)
-//     })
+    Users.create({
+        UserName : req.body.UserName,
+        PhoneNumber : req.body.PhoneNumber,
+        Password : req.body.Password
+    }).then((data)=>{
+        res.status(201).send(data)
+        console.log("user Created")
+    }).catch((err)=>{
+        res.status(500).send(err)
+    })
 })
 
 export default router;

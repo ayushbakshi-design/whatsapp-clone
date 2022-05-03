@@ -49,14 +49,27 @@
     margin-top: 20px;
 }
 
+.registerBtn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 187, 0);
+}
+
 .phoneImg {
     padding-top: 30px;
     padding-left: 60px;
 }
 
 .noAccount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 20px;
     font-family: 'Dm sans';
+}
+
+.forgot {
+    color: green;
+    
 }
 
 .noAccount button {
